@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sri Ganesh Bike Point – Motorcycle Service Center in Gandhi Chowk, Jeypore, Odisha. Expert bike servicing, oil change, engine repair & genuine spare parts." />
+  <title>Sri Ganesh Bike Point | Motorcycle Service Center, Jeypore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="main-nav">
+    <div class="nav-logo">Sri <span>Ganesh</span> Bike Point</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="tel:9437339758" class="nav-call"><i class="fa-solid fa-phone"></i> Call Now</a>
+      <div class="nav-hamburger" id="ham-btn" onclick="toggleMobileNav()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#about" onclick="closeMobileNav()">About</a>
+    <a href="#services" onclick="closeMobileNav()">Services</a>
+    <a href="#gallery" onclick="closeMobileNav()">Gallery</a>
+    <a href="#contact" onclick="closeMobileNav()">Contact</a>
+    <a href="tel:9437339758" onclick="closeMobileNav()" style="color:var(--orange)"><i class="fa-solid fa-phone"></i> +91 94373 39758</a>
+  </div>
+
+  <!-- HERO + TICKER pinned to 100vh -->
+  <div class="hero-viewport">
+  <section class="hero" id="home">
+    <div class="hero-dot-bg"></div>
+    <div class="hero-left">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Jeypore's Trusted Bike Workshop
+      </div>
+      <h1 class="hero-title">
+        Sri<br>
+        <span class="line-accent">Ganesh</span><br>
+        <span class="line-outline">Bike Point</span>
+      </h1>
+      <p class="hero-sub">Expert motorcycle servicing &amp; repairs in Jeypore — trusted by hundreds, powered by genuine parts.</p>
+      <div class="hero-actions">
+        <a href="tel:9437339758" class="btn btn-orange"><i class="fa-solid fa-phone"></i> Call Now</a>
+        <a href="#services" class="btn btn-outline-dark">Our Services →</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-wrap">
+        <img src="assets/images/shop-exterior.png" alt="Sri Ganesh Bike Point shop exterior" />
+        <div class="hero-img-overlay"></div>
+      </div>
+      <div class="hero-img-badge">Gandhi Chowk, Jeypore, Odisha</div>
+    </div>
+  </section>
+
+  <!-- TICKER (sits at bottom of viewport) -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span class="ticker-item">Oil Change</span>
+      <span class="ticker-item">Full Servicing</span>
+      <span class="ticker-item">Engine Repair</span>
+      <span class="ticker-item">Spare Parts</span>
+      <span class="ticker-item">Electricals</span>
+      <span class="ticker-item">Tyre &amp; Brakes</span>
+      <span class="ticker-item">Gandhi Chowk, Jeypore, Odisha</span>
+      <span class="ticker-item">All Bike Brands</span>
+      <span class="ticker-item">Oil Change</span>
+      <span class="ticker-item">Full Servicing</span>
+      <span class="ticker-item">Engine Repair</span>
+      <span class="ticker-item">Spare Parts</span>
+      <span class="ticker-item">Electricals</span>
+      <span class="ticker-item">Tyre &amp; Brakes</span>
+      <span class="ticker-item">Gandhi Chowk, Jeypore, Odisha</span>
+      <span class="ticker-item">All Bike Brands</span>
+    </div>
+  </div>
+  </div><!-- /hero-viewport -->
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <div style="position:relative; padding-bottom:1.5rem;">
+        <div class="about-img-container">
+          <img src="assets/images/shop-banner.png" alt="Sri Ganesh Auto Works" />
+          <div class="about-img-tag">Sri Ganesh Bike Point</div>
+        </div>
+        <div class="about-year-box">
+          <div class="about-year-num">25+</div>
+          <div class="about-year-label">Years of Service</div>
+        </div>
+      </div>
+      <div>
+        <h2 class="about-title">Jeypore's Most<br>Trusted Bike Shop</h2>
+        <p class="about-body">
+          For over 25 years, Sri Ganesh Bike Point has been a trusted name in Jeypore for motorcycle servicing and repairs. With a workshop at Gandhi Chowk and a dedicated spare parts shop on Bell Road, we're built for convenience. We specialize in Hero Honda spare parts and handle everything from routine maintenance to complex engine work.
+        </p>
+        <div class="about-checks">
+          <div class="about-check">
+            <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+            Specializes in Hero Honda spare parts
+          </div>
+          <div class="about-check">
+            <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+            Workshop at Gandhi Chowk &amp; Parts Shop on Bell Road
+          </div>
+          <div class="about-check">
+            <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+            All major bike brands serviced
+          </div>
+          <div class="about-check">
+            <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+            Transparent pricing, no hidden charges
+          </div>
+          <div class="about-check">
+            <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+            Quick turnaround, quality guaranteed
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-header">
+      <div class="section-label label-orange">What We Do</div>
+      <h2 class="section-title-dark">Our Services</h2>
+      <p class="section-body-dark">Complete motorcycle care under one roof — from daily maintenance to full restoration.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-item">
+        <div class="service-num">01</div>
+        <div class="service-icon-wrap"><i class="fa-solid fa-oil-can"></i></div>
+        <div class="service-name">Servicing &amp; Oil Change</div>
+        <div class="service-desc">Full tune-up with premium oil change — covers brakes, clutch, chain, carburettor, and all critical systems.</div>
+      </div>
+      <div class="service-item">
+        <div class="service-num">02</div>
+        <div class="service-icon-wrap"><i class="fa-solid fa-gears"></i></div>
+        <div class="service-name">Engine Repair</div>
+        <div class="service-desc">Expert diagnosis and repair of engine issues, overheating, noise, and performance drops.</div>
+      </div>
+      <div class="service-item">
+        <div class="service-num">03</div>
+        <div class="service-icon-wrap"><i class="fa-solid fa-bolt"></i></div>
+        <div class="service-name">Electricals</div>
+        <div class="service-desc">Battery, wiring, horn, lights, indicators — full electrical system diagnosis and repair.</div>
+      </div>
+      <div class="service-item">
+        <div class="service-num">04</div>
+        <div class="service-icon-wrap"><i class="fa-solid fa-motorcycle"></i></div>
+        <div class="service-name">Tyre &amp; Brakes</div>
+        <div class="service-desc">Tyre replacement, puncture repair, brake pads, and full brake system adjustment.</div>
+      </div>
+      <div class="service-item">
+        <div class="service-num">05</div>
+        <div class="service-icon-wrap"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <div class="service-name">Spare Parts</div>
+        <div class="service-desc">Specializing in Hero Honda spare parts. Genuine components for all major bike brands — available at our Bell Road parts shop.</div>
+      </div>
+      <div class="service-item">
+        <div class="service-num">06</div>
+        <div class="service-icon-wrap"><i class="fa-solid fa-shower"></i></div>
+        <div class="service-name">Water Wash</div>
+        <div class="service-desc">Pressure wash and full exterior cleaning to remove dirt, mud, and grease — leaves your bike looking new.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OWNER VIDEO -->
+  <section id="owner">
+    <div class="owner-inner">
+      <div class="owner-video-card">
+        <video id="owner-video" preload="metadata" playsinline poster="assets/images/video-thumbnail.png">
+          <source src="assets/videos/video3.mp4" type="video/mp4" />
+        </video>
+        <div class="owner-play-overlay" id="owner-overlay">
+          <div class="owner-play-btn">
+            <i class="fa-solid fa-play"></i>
+          </div>
+        </div>
+      </div>
+      <div class="owner-text">
+        <div class="owner-label">From The Owner</div>
+        <h2 class="owner-title">Hear from<br>the Owner</h2>
+        <p class="owner-quote">A few words from the man behind the workshop. Watch to get a feel for who we are before you visit.</p>
+        <div class="owner-attribution">
+          <div>
+            <div class="owner-attr-name">L Brahmaji Acharya</div>
+            <div class="owner-attr-role">Owner, Sri Ganesh Bike Point · Jeypore, Odisha</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="section-header">
+      <h2 class="section-title-light">Gallery</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-ig">
+        <div class="ig-clip">
+          <blockquote
+            class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/p/DZSCz9YJUch/?utm_source=ig_embed&utm_campaign=loading"
+            data-instgrm-version="14"
+            style="background:#FFF;border:0;border-radius:0;box-shadow:none;margin:0;max-width:100%;min-width:unset;padding:0;width:calc(100% - 2px);">
+          </blockquote>
+        </div>
+      </div>
+      <div class="gallery-photo">
+        <img src="assets/images/shop-exterior.png" alt="Sri Ganesh Bike Point shop front" />
+      </div>
+      <div class="gallery-photo">
+        <img src="assets/images/shop-banner-2.png" alt="Sri Ganesh Bike Point signage" />
+      </div>
+    </div>
+  </section>
+  <script async src="https://www.instagram.com/embed.js"></script>
+
+  <!-- CTA STRIP -->
+  <div class="cta-strip">
+    <div class="cta-strip-eyebrow">Ready to Book?</div>
+    <h2>Bring Your Bike In Today</h2>
+    <p>Open Mon–Sat, 9 AM to 7 PM. Walk in or call ahead — we'll take care of the rest.</p>
+    <div class="cta-strip-actions">
+      <a href="tel:9437339758" class="btn btn-white"><i class="fa-solid fa-phone"></i> +91 94373 39758</a>
+      <a href="https://wa.me/919437339758" target="_blank" rel="noopener" class="btn btn-outline-white"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-grid">
+      <div class="contact-left">
+        <div class="contact-left-label">Get In Touch</div>
+        <h2>Visit Us or<br>Call Anytime</h2>
+        <p>Two locations in Jeypore — workshop at Gandhi Chowk, spare parts shop on Bell Road. Open 6 days a week.</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="contact-item-label">Phone</div>
+              <a href="tel:9437339758" class="contact-value">+91 94373 39758</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+            <div>
+              <div class="contact-item-label">Alternate</div>
+              <a href="tel:9556117722" class="contact-value">+91 95561 17722</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-wrench"></i></div>
+            <div>
+              <div class="contact-item-label">Workshop — tap for directions</div>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Gandhi+Chowk,+Jeypore,+Odisha+764001" target="_blank" rel="noopener" class="contact-value">Gandhi Chowk, Jeypore, Odisha 764001</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-store"></i></div>
+            <div>
+              <div class="contact-item-label">Spare Parts Shop</div>
+              <span class="contact-value" style="cursor:default">Bell Road, Jeypore, Odisha 764001</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-regular fa-clock"></i></div>
+            <div>
+              <div class="contact-item-label">Working Hours</div>
+              <span class="contact-value" style="cursor:default">Mon – Sat &nbsp;|&nbsp; 9:00 AM – 7:00 PM</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Gandhi+Chowk,+Jeypore,+Odisha+764001" target="_blank" rel="noopener" class="btn btn-orange" style="margin-top:2rem;">
+          <i class="fa-solid fa-location-arrow"></i> Get Directions
+        </a>
+      </div>
+      <div>
+        <div class="map-embed">
+          <iframe
+            src="https://maps.google.com/maps?q=Gandhi+Chowk,+Jeypore,+Odisha+764001&output=embed&z=16"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Sri Ganesh Bike Point Location"
+          ></iframe>
+          <div class="map-footer">
+            <i class="fa-solid fa-location-dot"></i> Infront of Hero Showroom, Gandhi Chowk, Jeypore, Odisha 764001
+          </div>
+        </div>
+
+        <div class="social-head" style="margin-top:3.5rem;">Follow Our Work</div>
+        <div class="social-links">
+          <a href="https://www.youtube.com/@SriGaneshBikepoint" target="_blank" rel="noopener" class="social-link">
+            <span class="social-link-icon"><i class="fa-brands fa-youtube"></i></span>
+            <div>
+              <div class="social-link-name">YouTube</div>
+              <div class="social-link-handle">@SriGaneshBikepoint</div>
+            </div>
+            <span class="social-link-arrow">→</span>
+          </a>
+          <a href="https://www.instagram.com/sri_ganesh_bike_point?igsh=MXEyamd0bnZiOTE1Zw%3D%3D" target="_blank" rel="noopener" class="social-link">
+            <span class="social-link-icon"><i class="fa-brands fa-instagram"></i></span>
+            <div>
+              <div class="social-link-name">Instagram</div>
+              <div class="social-link-handle">@sri_ganesh_bike_point</div>
+            </div>
+            <span class="social-link-arrow">→</span>
+          </a>
+          <a href="https://www.facebook.com/share/1DED9izo4i/?mibextid=wwXIfr" target="_blank" rel="noopener" class="social-link">
+            <span class="social-link-icon"><i class="fa-brands fa-facebook"></i></span>
+            <div>
+              <div class="social-link-name">Facebook</div>
+              <div class="social-link-handle">Sri Ganesh Bike Point</div>
+            </div>
+            <span class="social-link-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="footer-logo">Sri <span>Ganesh</span> Bike Point</div>
+        <div class="footer-copy">© 2026 Sri Ganesh Bike Point. All rights reserved.</div>
+      </div>
+      <div class="footer-dev">
+        Developed by <a href="https://devianlabs.com" target="_blank" rel="noopener">Devian Labs</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/919437339758" class="wa-fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
