@@ -177,9 +177,9 @@ nav.nav-solid .nav-hamburger span { background: var(--text-dark); }
 .hero-bg-img {
   position: absolute;
   inset: 0;
-  background-image: url('assets/images/shop-front.png');
+  background-image: url('assets/images/shop-front-signboard.png');
   background-size: cover;
-  background-position: right center;
+  background-position: center 82%;
   pointer-events: none;
 }
 .hero-bg-img::after {
@@ -261,6 +261,7 @@ nav.nav-solid .nav-hamburger span { background: var(--text-dark); }
   z-index: 2;
 }
 .hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; position: relative; z-index: 2; }
+.hero-mobile-img { display: none; }
 .hero-right { position: relative; overflow: hidden; }
 .hero-img-wrap {
   position: absolute;
@@ -348,7 +349,7 @@ nav.nav-solid .nav-hamburger span { background: var(--text-dark); }
 }
 .about-img-tag {
   position: absolute;
-  top: 1.25rem; left: 1.25rem;
+  top: 1.2rem; left: 1.25rem;
   background: var(--orange);
   color: #fff;
   font-size: 0.72rem;
@@ -977,9 +978,27 @@ footer {
 
   /* Hero */
   .hero-viewport { height: auto; }
-  .hero { min-height: 100vh; padding: 100px 6% 6rem; }
+  .hero { min-height: 0; padding: 90px 6% 3rem; background: var(--dark); }
+  .hero-bg-img, .hero-dot-bg { display: none; }
+  .hero-mobile-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+  }
   .hero-badge { font-size: 0.55rem; padding: 0.25rem 0.65rem; letter-spacing: 1px; }
-  .hero-img-badge { font-size: 0.6rem; padding: 0.3rem 0.6rem; bottom: 1.25rem; }
+  .hero-sub { margin-bottom: 2rem; }
+  .hero-img-badge {
+    position: static;
+    transform: none;
+    width: fit-content;
+    margin: 1.5rem auto 0;
+    font-size: 0.6rem;
+    padding: 0.3rem 0.6rem;
+  }
   .hero-actions { flex-wrap: nowrap; }
   .hero-actions .btn { font-size: 0.75rem; padding: 0.7rem 1.1rem; }
   .ticker-item { font-size: 0.72rem; padding: 0 1.25rem; gap: 1.25rem; letter-spacing: 1px; }
@@ -1028,4 +1047,7 @@ footer {
   .section-header { padding: 0 1rem; }
   .owner-title { font-size: 2.8rem; }
   .about-title { font-size: 2rem; }
+  .about-img-tag {
+    top: 0;
+  }
 }
